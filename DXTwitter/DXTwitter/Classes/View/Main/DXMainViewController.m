@@ -9,8 +9,9 @@
 #import "DXMainViewController.h"
 #import "DXBaseViewController.h"
 #import <YYKit.h>
+#import "DXTabbarItem.h"
 
-@interface DXMainViewController ()
+@interface DXMainViewController () <UITabBarDelegate>
 
 @end
 
@@ -18,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupUI];
 }
@@ -47,4 +50,13 @@
     return nav;
 }
 
+
+
 @end
+
+
+
+
+
+
+

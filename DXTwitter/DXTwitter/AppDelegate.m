@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DXMainViewController.h"
+#import <YYKit.h>
 
 @interface AppDelegate ()
 
@@ -23,35 +24,60 @@
     _window.rootViewController = rootVC;
     [_window makeKeyAndVisible];
     
+    [self launchAnimation];
+    
     return YES;
 }
 
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+- (void)launchAnimation {
+    _window.backgroundColor = UIColorHex(23a1f1);
+    UIView *view = _window.rootViewController.view;
+    
+    UIView *launchView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    launchView.backgroundColor = [UIColor whiteColor];
+    [view addSubview:launchView];
+    [view bringSubviewToFront:launchView];
+    
+    CALayer *logo = [CALayer layer];
+    logo.contents = (__bridge id _Nullable)([UIImage imageNamed:@"logo"].CGImage);
+    logo.contentMode = UIViewContentModeScaleAspectFit;
+    logo.bounds = CGRectMake(0, 0, 60, 60);
+    logo.position = view.center;
+    view.layer.mask = logo;
+    
+    CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"bounds"];
+    anim.duration = 1.0;
+    anim.beginTime = CACurrentMediaTime() + 1;
+    anim.values = @[[NSValue valueWithCGRect:view.layer.mask.bounds], [NSValue valueWithCGRect:CGRectMake(0, 0, 50, 50)], [NSValue valueWithCGRect:CGRectMake(0, 0, 4000, 4000)]];
+    anim.keyTimes = @[@0, @0.5, @1];
+    anim.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut], [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault]];
+    anim.removedOnCompletion = NO;
+    anim.fillMode = kCAFillModeForwards;
+    [view.layer.mask addAnimation:anim forKey:nil];
+    
+    [UIView animateWithDuration:0.25 delay:1.3 options:0 animations:^{
+        launchView.alpha = 0;
+    } completion:^(BOOL finished) {
+        [launchView removeFromSuperview];
+    }];
+    
+    [UIView animateWithDuration:0.25 delay:1.3 options:0 animations:^{
+        view.transform = CGAffineTransformMakeScale(1.05, 1.05);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.25 delay:0 options:0 animations:^{
+            view.transform = CGAffineTransformIdentity;
+        } completion:nil];
+    }];
 }
 
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-}
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
 
 
 @end
+
+
+
+
+
+
+
+
