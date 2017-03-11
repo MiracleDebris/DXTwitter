@@ -1,0 +1,10 @@
+
+platform :ios, '8.0'
+
+target 'DXTwitter' do
+
+  # Pods for DXTwitter
+
+pod 'YYKit'
+
+end
