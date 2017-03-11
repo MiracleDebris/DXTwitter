@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		E121AFDC1E73D21700577BCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E121AFDB1E73D21700577BCA /* main.m */; };
 		E121AFDF1E73D21700577BCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E121AFDE1E73D21700577BCA /* AppDelegate.m */; };
-		E121AFE21E73D21700577BCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121AFE11E73D21700577BCA /* ViewController.m */; };
-		E121AFE51E73D21700577BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E121AFE31E73D21700577BCA /* Main.storyboard */; };
 		E121AFE71E73D21700577BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E121AFE61E73D21700577BCA /* Assets.xcassets */; };
 		E121AFEA1E73D21700577BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E121AFE81E73D21700577BCA /* LaunchScreen.storyboard */; };
+		E121AFFE1E73D7DF00577BCA /* DXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121AFFD1E73D7DF00577BCA /* DXMainViewController.m */; };
+		E121B0041E73D8BA00577BCA /* DXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B0031E73D8BA00577BCA /* DXBaseViewController.m */; };
+		E121B0071E73DB2D00577BCA /* DXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B0061E73DB2D00577BCA /* DXHomeViewController.m */; };
+		E121B00A1E73DB3600577BCA /* DXDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B0091E73DB3600577BCA /* DXDiscoverViewController.m */; };
+		E121B00D1E73DB3C00577BCA /* DXNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B00C1E73DB3C00577BCA /* DXNotificationViewController.m */; };
+		E121B0101E73DB4200577BCA /* DXMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B00F1E73DB4200577BCA /* DXMessageViewController.m */; };
+		E121B0131E73DB4800577BCA /* DXProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B0121E73DB4800577BCA /* DXProfileViewController.m */; };
+		E121B0151E73F5B700577BCA /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = E121B0141E73F5B700577BCA /* Property List.plist */; };
+		E121B0171E740F2300577BCA /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E121B0161E740F2300577BCA /* main.json */; };
 		E2910C1D8F256BBBC42A3071 /* libPods-DXTwitter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3335118B78F3EB02284810 /* libPods-DXTwitter.a */; };
 /* End PBXBuildFile section */
 
@@ -22,14 +29,27 @@
 		7B3335118B78F3EB02284810 /* libPods-DXTwitter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DXTwitter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E121AFD71E73D21700577BCA /* DXTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E121AFDB1E73D21700577BCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E121AFDD1E73D21700577BCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E121AFDE1E73D21700577BCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E121AFE01E73D21700577BCA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E121AFE11E73D21700577BCA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E121AFE41E73D21700577BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E121AFDD1E73D21700577BCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		E121AFDE1E73D21700577BCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		E121AFE61E73D21700577BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E121AFE91E73D21700577BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E121AFEB1E73D21700577BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E121AFFC1E73D7DF00577BCA /* DXMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXMainViewController.h; sourceTree = "<group>"; };
+		E121AFFD1E73D7DF00577BCA /* DXMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXMainViewController.m; sourceTree = "<group>"; };
+		E121B0021E73D8BA00577BCA /* DXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXBaseViewController.h; sourceTree = "<group>"; };
+		E121B0031E73D8BA00577BCA /* DXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXBaseViewController.m; sourceTree = "<group>"; };
+		E121B0051E73DB2D00577BCA /* DXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXHomeViewController.h; sourceTree = "<group>"; };
+		E121B0061E73DB2D00577BCA /* DXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXHomeViewController.m; sourceTree = "<group>"; };
+		E121B0081E73DB3600577BCA /* DXDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDiscoverViewController.h; sourceTree = "<group>"; };
+		E121B0091E73DB3600577BCA /* DXDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXDiscoverViewController.m; sourceTree = "<group>"; };
+		E121B00B1E73DB3C00577BCA /* DXNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXNotificationViewController.h; sourceTree = "<group>"; };
+		E121B00C1E73DB3C00577BCA /* DXNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXNotificationViewController.m; sourceTree = "<group>"; };
+		E121B00E1E73DB4200577BCA /* DXMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXMessageViewController.h; sourceTree = "<group>"; };
+		E121B00F1E73DB4200577BCA /* DXMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXMessageViewController.m; sourceTree = "<group>"; };
+		E121B0111E73DB4800577BCA /* DXProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXProfileViewController.h; sourceTree = "<group>"; };
+		E121B0121E73DB4800577BCA /* DXProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXProfileViewController.m; sourceTree = "<group>"; };
+		E121B0141E73F5B700577BCA /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		E121B0161E740F2300577BCA /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +102,7 @@
 		E121AFD91E73D21700577BCA /* DXTwitter */ = {
 			isa = PBXGroup;
 			children = (
-				E121AFDD1E73D21700577BCA /* AppDelegate.h */,
-				E121AFDE1E73D21700577BCA /* AppDelegate.m */,
-				E121AFE01E73D21700577BCA /* ViewController.h */,
-				E121AFE11E73D21700577BCA /* ViewController.m */,
-				E121AFE31E73D21700577BCA /* Main.storyboard */,
-				E121AFE61E73D21700577BCA /* Assets.xcassets */,
-				E121AFE81E73D21700577BCA /* LaunchScreen.storyboard */,
-				E121AFEB1E73D21700577BCA /* Info.plist */,
+				E121AFF11E73D72500577BCA /* Classes */,
 				E121AFDA1E73D21700577BCA /* Supporting Files */,
 			);
 			path = DXTwitter;
@@ -98,9 +111,117 @@
 		E121AFDA1E73D21700577BCA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E121AFE61E73D21700577BCA /* Assets.xcassets */,
+				E121AFEB1E73D21700577BCA /* Info.plist */,
+				E121AFE81E73D21700577BCA /* LaunchScreen.storyboard */,
 				E121AFDB1E73D21700577BCA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E121AFF11E73D72500577BCA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E121AFF41E73D72500577BCA /* View */,
+				E121AFF51E73D72500577BCA /* ViewModel */,
+				E121AFF21E73D72500577BCA /* Model */,
+				E121AFF31E73D72500577BCA /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E121AFF21E73D72500577BCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E121AFF31E73D72500577BCA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				E121AFDD1E73D21700577BCA /* AppDelegate.h */,
+				E121AFDE1E73D21700577BCA /* AppDelegate.m */,
+				E121B0141E73F5B700577BCA /* Property List.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		E121AFF41E73D72500577BCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E121AFF81E73D7AD00577BCA /* Main */,
+				E121AFF71E73D7AD00577BCA /* Home */,
+				E121AFF61E73D7AD00577BCA /* Discover */,
+				E121AFFA1E73D7AD00577BCA /* Notification */,
+				E121AFF91E73D7AD00577BCA /* Message */,
+				E121AFFB1E73D7AD00577BCA /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E121AFF51E73D72500577BCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E121AFF61E73D7AD00577BCA /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				E121B0081E73DB3600577BCA /* DXDiscoverViewController.h */,
+				E121B0091E73DB3600577BCA /* DXDiscoverViewController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		E121AFF71E73D7AD00577BCA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E121B0051E73DB2D00577BCA /* DXHomeViewController.h */,
+				E121B0061E73DB2D00577BCA /* DXHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E121AFF81E73D7AD00577BCA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E121B0161E740F2300577BCA /* main.json */,
+				E121AFFC1E73D7DF00577BCA /* DXMainViewController.h */,
+				E121AFFD1E73D7DF00577BCA /* DXMainViewController.m */,
+				E121B0021E73D8BA00577BCA /* DXBaseViewController.h */,
+				E121B0031E73D8BA00577BCA /* DXBaseViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E121AFF91E73D7AD00577BCA /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E121B00E1E73DB4200577BCA /* DXMessageViewController.h */,
+				E121B00F1E73DB4200577BCA /* DXMessageViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E121AFFA1E73D7AD00577BCA /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				E121B00B1E73DB3C00577BCA /* DXNotificationViewController.h */,
+				E121B00C1E73DB3C00577BCA /* DXNotificationViewController.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		E121AFFB1E73D7AD00577BCA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E121B0111E73DB4800577BCA /* DXProfileViewController.h */,
+				E121B0121E73DB4800577BCA /* DXProfileViewController.m */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +253,7 @@
 		E121AFCF1E73D21700577BCA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DX;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = dx;
 				TargetAttributes = {
@@ -165,9 +287,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E121B0151E73F5B700577BCA /* Property List.plist in Resources */,
 				E121AFEA1E73D21700577BCA /* LaunchScreen.storyboard in Resources */,
+				E121B0171E740F2300577BCA /* main.json in Resources */,
 				E121AFE71E73D21700577BCA /* Assets.xcassets in Resources */,
-				E121AFE51E73D21700577BCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,23 +349,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E121AFE21E73D21700577BCA /* ViewController.m in Sources */,
 				E121AFDF1E73D21700577BCA /* AppDelegate.m in Sources */,
+				E121B00A1E73DB3600577BCA /* DXDiscoverViewController.m in Sources */,
+				E121B00D1E73DB3C00577BCA /* DXNotificationViewController.m in Sources */,
 				E121AFDC1E73D21700577BCA /* main.m in Sources */,
+				E121B0101E73DB4200577BCA /* DXMessageViewController.m in Sources */,
+				E121AFFE1E73D7DF00577BCA /* DXMainViewController.m in Sources */,
+				E121B0071E73DB2D00577BCA /* DXHomeViewController.m in Sources */,
+				E121B0131E73DB4800577BCA /* DXProfileViewController.m in Sources */,
+				E121B0041E73D8BA00577BCA /* DXBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E121AFE31E73D21700577BCA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E121AFE41E73D21700577BCA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E121AFE81E73D21700577BCA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,6 +468,7 @@
 			baseConfigurationReference = 2C7D3B08DDDB640533A91897 /* Pods-DXTwitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = R2MRA258V6;
 				INFOPLIST_FILE = DXTwitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -360,6 +482,7 @@
 			baseConfigurationReference = 6DACE809D30D3CB654415DFB /* Pods-DXTwitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = R2MRA258V6;
 				INFOPLIST_FILE = DXTwitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -387,6 +510,7 @@
 				E121AFF01E73D21700577BCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

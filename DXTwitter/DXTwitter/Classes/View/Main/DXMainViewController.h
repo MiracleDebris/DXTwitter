@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DXMainViewController.h
 //  DXTwitter
 //
 //  Created by dx on 17/3/11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DXMainViewController : UITabBarController
 
 @end
-

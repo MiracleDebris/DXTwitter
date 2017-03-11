@@ -1,0 +1,27 @@
+[
+  {
+    "clsName" : "DXHomeViewController",
+    "title" : "主页",
+    "imageName" : "home"
+  },
+  {
+    "clsName" : "DXDiscoverViewController",
+    "title" : "探索",
+    "imageName" : "discover"
+  },
+  {
+    "clsName" : "DXNotificationViewController",
+    "title" : "通知",
+    "imageName" : "notification"
+  },
+  {
+    "clsName" : "DXMessageViewController",
+    "title" : "私信",
+    "imageName" : "message"
+  },
+  {
+    "clsName" : "DXProfileViewController",
+    "title" : "我",
+    "imageName" : "profile"
+  }
+]
