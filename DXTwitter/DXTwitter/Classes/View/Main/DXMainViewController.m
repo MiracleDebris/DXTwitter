@@ -9,7 +9,6 @@
 #import "DXMainViewController.h"
 #import "DXBaseViewController.h"
 #import <YYKit.h>
-#import "DXTabbarItem.h"
 
 @interface DXMainViewController () <UITabBarDelegate>
 
@@ -30,8 +29,10 @@
     NSArray *dicArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
     
     NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:5];
-    for (NSDictionary *dic in dicArray) {
-        [arrayM addObject:[self controllerWithDic:dic]];
+    for (NSInteger i = 0; i < dicArray.count; i++) {
+        UIViewController *vc = [self controllerWithDic:dicArray[i]];
+        vc.tabBarItem.tag = i;
+        [arrayM addObject:vc];
     }
     self.viewControllers = arrayM.copy;
 }
@@ -50,6 +51,27 @@
     return nav;
 }
 
+#pragma mark - UITabBarDelegate
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    NSInteger index = 0;
+    NSInteger itemTag = item.tag;
+    for (UIView *subView in tabBar.subviews) {
+        if ([subView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            if (index == itemTag) {
+                for (UIView *v in subView.subviews) {
+                    if ([v isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
+                        CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+                        anim.values = @[@1.0, @0.9, @1.05, @0.97, @1.0];
+                        anim.duration = 0.4;
+                        anim.calculationMode = kCAAnimationCubic;
+                        [v.layer addAnimation:anim forKey:nil];
+                    }
+                }
+            }
+            index++;
+        }
+    }
+}
 
 
 @end
