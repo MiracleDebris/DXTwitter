@@ -30,7 +30,7 @@
 }
 
 - (void)launchAnimation {
-    _window.backgroundColor = UIColorHex(23a1f1);
+    _window.backgroundColor = UIColorHex(55acee);
     UIView *view = _window.rootViewController.view;
     
     UIView *launchView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -66,6 +66,7 @@
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.25 delay:0 options:0 animations:^{
             view.transform = CGAffineTransformIdentity;
+            view.layer.mask = nil;
         } completion:nil];
     }];
 }

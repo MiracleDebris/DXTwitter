@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.11372549019607843" green="0.55294117647058827" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.27450980392156865" green="0.60392156862745094" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="O7o-5w-HfZ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9sS-fP-Qk8"/>
                             <constraint firstItem="O7o-5w-HfZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tKD-2U-zd3"/>
@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-74" y="369"/>
+            <point key="canvasLocation" x="130" y="346"/>
         </scene>
     </scenes>
     <resources>

@@ -8,6 +8,7 @@
 
 #import "DXMainViewController.h"
 #import "DXBaseViewController.h"
+#import "DXNavigationController.h"
 #import <YYKit.h>
 
 @interface DXMainViewController () <UITabBarDelegate>
@@ -47,7 +48,7 @@
     vc.tabBarItem.image = [UIImage imageNamed:[NSString stringWithFormat:@"icn_tab_%@_default", imageName]];
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"icn_tab_%@_selected", imageName]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: UIColorHex(55acee)} forState:UIControlStateHighlighted];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    DXNavigationController *nav = [[DXNavigationController alloc] initWithRootViewController:vc];
     return nav;
 }
 
