@@ -9,11 +9,12 @@
 #import "DXBaseViewController.h"
 #import <YYKit.h>
 
-@interface DXBaseViewController ()
+@interface DXBaseViewController () <UIViewControllerTransitioningDelegate>
 
 @end
 
 @implementation DXBaseViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

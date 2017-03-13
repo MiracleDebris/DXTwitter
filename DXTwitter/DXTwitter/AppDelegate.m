@@ -30,7 +30,7 @@
 }
 
 - (void)launchAnimation {
-    _window.backgroundColor = UIColorHex(55acee);
+    _window.backgroundColor = UIColorHex(1da1f2);
     UIView *view = _window.rootViewController.view;
     
     UIView *launchView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];

@@ -33,6 +33,9 @@
 		E19C65E51E75859B0062ED25 /* DXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C65E41E75859B0062ED25 /* DXTableViewCell.m */; };
 		E19C65E81E7593520062ED25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C65E71E7593520062ED25 /* AppDelegate.m */; };
 		E19C65EB1E7595E50062ED25 /* DXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C65EA1E7595E50062ED25 /* DXNavigationController.m */; };
+		E1B0A6D41E7624050014CE9B /* DXPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B0A6D31E7624050014CE9B /* DXPresentationController.m */; };
+		E1B0A6DA1E7630800014CE9B /* DXTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B0A6D91E7630800014CE9B /* DXTweetViewController.m */; };
+		E1B0A6DD1E763CA20014CE9B /* DXTwitterAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B0A6DC1E763CA20014CE9B /* DXTwitterAnimator.m */; };
 		E1DF32C91E75070E00EF91CA /* ResourceTwitter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1DF32B71E75070E00EF91CA /* ResourceTwitter.bundle */; };
 		E1DF32CA1E75070E00EF91CA /* ResourceWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1DF32B81E75070E00EF91CA /* ResourceWeibo.bundle */; };
 		E1DF32CB1E75070E00EF91CA /* EmoticonWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1DF32B91E75070E00EF91CA /* EmoticonWeibo.bundle */; };
@@ -116,6 +119,12 @@
 		E19C65E71E7593520062ED25 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DXTwitter/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		E19C65E91E7595E50062ED25 /* DXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXNavigationController.h; sourceTree = "<group>"; };
 		E19C65EA1E7595E50062ED25 /* DXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXNavigationController.m; sourceTree = "<group>"; };
+		E1B0A6D21E7624050014CE9B /* DXPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXPresentationController.h; sourceTree = "<group>"; };
+		E1B0A6D31E7624050014CE9B /* DXPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXPresentationController.m; sourceTree = "<group>"; };
+		E1B0A6D81E7630800014CE9B /* DXTweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTweetViewController.h; sourceTree = "<group>"; };
+		E1B0A6D91E7630800014CE9B /* DXTweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTweetViewController.m; sourceTree = "<group>"; };
+		E1B0A6DB1E763CA20014CE9B /* DXTwitterAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXTwitterAnimator.h; sourceTree = "<group>"; };
+		E1B0A6DC1E763CA20014CE9B /* DXTwitterAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXTwitterAnimator.m; sourceTree = "<group>"; };
 		E1DF32B71E75070E00EF91CA /* ResourceTwitter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ResourceTwitter.bundle; sourceTree = "<group>"; };
 		E1DF32B81E75070E00EF91CA /* ResourceWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ResourceWeibo.bundle; sourceTree = "<group>"; };
 		E1DF32B91E75070E00EF91CA /* EmoticonWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonWeibo.bundle; sourceTree = "<group>"; };
@@ -298,6 +307,8 @@
 				E121B0031E73D8BA00577BCA /* DXBaseViewController.m */,
 				E19C65E91E7595E50062ED25 /* DXNavigationController.h */,
 				E19C65EA1E7595E50062ED25 /* DXNavigationController.m */,
+				E1B0A6D81E7630800014CE9B /* DXTweetViewController.h */,
+				E1B0A6D91E7630800014CE9B /* DXTweetViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -344,6 +355,10 @@
 				E19C65E11E7585560062ED25 /* DXTableView.m */,
 				E19C65E31E75859B0062ED25 /* DXTableViewCell.h */,
 				E19C65E41E75859B0062ED25 /* DXTableViewCell.m */,
+				E1B0A6D21E7624050014CE9B /* DXPresentationController.h */,
+				E1B0A6D31E7624050014CE9B /* DXPresentationController.m */,
+				E1B0A6DB1E763CA20014CE9B /* DXTwitterAnimator.h */,
+				E1B0A6DC1E763CA20014CE9B /* DXTwitterAnimator.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -548,10 +563,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19C65E81E7593520062ED25 /* AppDelegate.m in Sources */,
+				E1B0A6DD1E763CA20014CE9B /* DXTwitterAnimator.m in Sources */,
 				E19C65E51E75859B0062ED25 /* DXTableViewCell.m in Sources */,
 				E19C65D61E757E850062ED25 /* DXHelper.m in Sources */,
 				E19C65E21E7585560062ED25 /* DXTableView.m in Sources */,
 				E19C65D01E755A6E0062ED25 /* DXSimpleWebViewController.m in Sources */,
+				E1B0A6D41E7624050014CE9B /* DXPresentationController.m in Sources */,
 				E19C65EB1E7595E50062ED25 /* DXNavigationController.m in Sources */,
 				E19C65C91E7550E30062ED25 /* DXStatusCell.m in Sources */,
 				E121B00A1E73DB3600577BCA /* DXDiscoverViewController.m in Sources */,
@@ -559,6 +576,7 @@
 				E121B00D1E73DB3C00577BCA /* DXNotificationViewController.m in Sources */,
 				E121AFDC1E73D21700577BCA /* main.m in Sources */,
 				E19C65D31E755E0F0062ED25 /* DXPhotoGroupView.m in Sources */,
+				E1B0A6DA1E7630800014CE9B /* DXTweetViewController.m in Sources */,
 				E121B0101E73DB4200577BCA /* DXMessageViewController.m in Sources */,
 				E121AFFE1E73D7DF00577BCA /* DXMainViewController.m in Sources */,
 				E121B0071E73DB2D00577BCA /* DXHomeViewController.m in Sources */,
@@ -678,8 +696,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R2MRA258V6;
 				INFOPLIST_FILE = DXTwitter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = miracledebros.DXTwitter;
+				PRODUCT_BUNDLE_IDENTIFIER = miracledebris.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -691,8 +710,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R2MRA258V6;
 				INFOPLIST_FILE = DXTwitter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = miracledebros.DXTwitter;
+				PRODUCT_BUNDLE_IDENTIFIER = miracledebris.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -14,10 +14,14 @@
 #import "DXSimpleWebViewController.h"
 #import "DXPhotoGroupView.h"
 #import "DXTableView.h"
+//#import "DXTwitterTransition.h"
+#import "DXNavigationController.h"
+#import "DXTweetViewController.h"
 
 @interface DXHomeViewController () <UITableViewDelegate, UITableViewDataSource, DXStatusCellDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *layouts;
+//@property (nonatomic, strong) DXTwitterTransitionDelegate *transitionDelegate;
 @end
 
 @implementation DXHomeViewController
@@ -41,6 +45,7 @@
     
     [self setupNavBar];
     self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.transitioningDelegate = [DXTwitterTransitionDelegate new];
     
     _tableView.frame = self.view.bounds;
     _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
@@ -111,7 +116,9 @@
 }
 
 - (void)tweet {
-    
+    DXTweetViewController *vc = [DXTweetViewController new];
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -169,7 +176,6 @@
 
 - (void)cell:(DXStatusCell *)cell didClickImageAtIndex:(NSUInteger)index withLongPress:(BOOL)longPress {
     if (longPress) {
-        // alert
         return;
     }
     UIImageView *fromView = nil;
