@@ -67,6 +67,7 @@
         [UIView animateWithDuration:0.25 delay:0 options:0 animations:^{
             view.transform = CGAffineTransformIdentity;
             view.layer.mask = nil;
+            _window.backgroundColor = [UIColor blackColor];
         } completion:nil];
     }];
 }
