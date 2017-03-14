@@ -16,7 +16,6 @@
 		E121B00A1E73DB3600577BCA /* DXDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B0091E73DB3600577BCA /* DXDiscoverViewController.m */; };
 		E121B00D1E73DB3C00577BCA /* DXNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B00C1E73DB3C00577BCA /* DXNotificationViewController.m */; };
 		E121B0101E73DB4200577BCA /* DXMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B00F1E73DB4200577BCA /* DXMessageViewController.m */; };
-		E121B0131E73DB4800577BCA /* DXProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E121B0121E73DB4800577BCA /* DXProfileViewController.m */; };
 		E121B0171E740F2300577BCA /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E121B0161E740F2300577BCA /* main.json */; };
 		E19C65C31E7544430062ED25 /* DXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C65C21E7544430062ED25 /* DXModel.m */; };
 		E19C65C61E754AF80062ED25 /* DXStatusLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C65C51E754AF80062ED25 /* DXStatusLayout.m */; };
@@ -66,6 +65,7 @@
 		E1DF32F01E75071600EF91CA /* ermilio_lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = E1DF32E41E75071600EF91CA /* ermilio_lossless.webp */; };
 		E1DF32F11E75071600EF91CA /* ermilio.gif in Resources */ = {isa = PBXBuildFile; fileRef = E1DF32E51E75071600EF91CA /* ermilio.gif */; };
 		E1DF32F21E75071600EF91CA /* ermilio.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DF32E61E75071600EF91CA /* ermilio.png */; };
+		E1E27DB41E7825B50063BCB2 /* DXProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E27DB31E7825B50063BCB2 /* DXProfileViewController.m */; };
 		E2910C1D8F256BBBC42A3071 /* libPods-DXTwitter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3335118B78F3EB02284810 /* libPods-DXTwitter.a */; };
 /* End PBXBuildFile section */
 
@@ -90,8 +90,6 @@
 		E121B00C1E73DB3C00577BCA /* DXNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXNotificationViewController.m; sourceTree = "<group>"; };
 		E121B00E1E73DB4200577BCA /* DXMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXMessageViewController.h; sourceTree = "<group>"; };
 		E121B00F1E73DB4200577BCA /* DXMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXMessageViewController.m; sourceTree = "<group>"; };
-		E121B0111E73DB4800577BCA /* DXProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXProfileViewController.h; sourceTree = "<group>"; };
-		E121B0121E73DB4800577BCA /* DXProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXProfileViewController.m; sourceTree = "<group>"; };
 		E121B0161E740F2300577BCA /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		E19C65C11E7544430062ED25 /* DXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXModel.h; sourceTree = "<group>"; };
 		E19C65C21E7544430062ED25 /* DXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXModel.m; sourceTree = "<group>"; };
@@ -155,6 +153,8 @@
 		E1DF32E41E75071600EF91CA /* ermilio_lossless.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_lossless.webp; sourceTree = "<group>"; };
 		E1DF32E51E75071600EF91CA /* ermilio.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ermilio.gif; sourceTree = "<group>"; };
 		E1DF32E61E75071600EF91CA /* ermilio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ermilio.png; sourceTree = "<group>"; };
+		E1E27DB21E7825B50063BCB2 /* DXProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXProfileViewController.h; sourceTree = "<group>"; };
+		E1E27DB31E7825B50063BCB2 /* DXProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,8 +334,8 @@
 		E121AFFB1E73D7AD00577BCA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				E121B0111E73DB4800577BCA /* DXProfileViewController.h */,
-				E121B0121E73DB4800577BCA /* DXProfileViewController.m */,
+				E1E27DB21E7825B50063BCB2 /* DXProfileViewController.h */,
+				E1E27DB31E7825B50063BCB2 /* DXProfileViewController.m */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -576,12 +576,12 @@
 				E121B00D1E73DB3C00577BCA /* DXNotificationViewController.m in Sources */,
 				E121AFDC1E73D21700577BCA /* main.m in Sources */,
 				E19C65D31E755E0F0062ED25 /* DXPhotoGroupView.m in Sources */,
+				E1E27DB41E7825B50063BCB2 /* DXProfileViewController.m in Sources */,
 				E1B0A6DA1E7630800014CE9B /* DXTweetViewController.m in Sources */,
 				E121B0101E73DB4200577BCA /* DXMessageViewController.m in Sources */,
 				E121AFFE1E73D7DF00577BCA /* DXMainViewController.m in Sources */,
 				E121B0071E73DB2D00577BCA /* DXHomeViewController.m in Sources */,
 				E19C65CD1E7552590062ED25 /* DXControl.m in Sources */,
-				E121B0131E73DB4800577BCA /* DXProfileViewController.m in Sources */,
 				E19C65C61E754AF80062ED25 /* DXStatusLayout.m in Sources */,
 				E121B0041E73D8BA00577BCA /* DXBaseViewController.m in Sources */,
 			);

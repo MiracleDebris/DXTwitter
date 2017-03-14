@@ -10,8 +10,6 @@
 #import "DXTwitterAnimator.h"
 #import <YYKit/YYKit.h>
 
-#define kToolbarHeight (35 + 46)
-
 @interface DXTweetViewController () <YYTextViewDelegate, YYTextKeyboardObserver>
 @property (nonatomic, strong) DXTwitterAnimator *animator;
 @property (nonatomic, strong) UINavigationBar *navBar;
@@ -47,11 +45,11 @@
 }
 
 - (void)_initNavBar {
-    _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 20, self.view.width, 44)];
+    _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 64)];
     _navBar.barTintColor = [UIColor whiteColor];
     _navBar.backgroundColor = [UIColor whiteColor];
     
-    UIBarButtonItem *dismissItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tweet_dismiss"] style:UIBarButtonItemStylePlain target:self action:@selector(dismissVC)];
+    UIBarButtonItem *dismissItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"tweet_dismiss"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(dismissVC)];
     
     UINavigationItem *navItem = [[UINavigationItem alloc] init];
     navItem.rightBarButtonItem = dismissItem;
@@ -65,7 +63,7 @@
     _textView = [YYTextView new];
     _textView.size = CGSizeMake(self.view.width, self.view.height);
     _textView.textContainerInset = UIEdgeInsetsMake(12, 16, 12, 16);
-    _textView.contentInset = UIEdgeInsetsMake(64, 0, kToolbarHeight, 0);
+    _textView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     _textView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _textView.showsVerticalScrollIndicator = NO;
     _textView.alwaysBounceVertical = YES;
