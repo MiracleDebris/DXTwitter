@@ -26,6 +26,7 @@
 
 @implementation DXHomeViewController {
     BOOL _statusBarHidden;
+    NSInteger _statusBarHiddenTimes;
 }
 
 - (instancetype)init {
@@ -33,6 +34,7 @@
     _tableView = [DXTableView new];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    _statusBarHiddenTimes = 0;
     return self;
 }
 
@@ -40,18 +42,26 @@
     return _statusBarHidden;
 }
 
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation {
+    return UIStatusBarAnimationFade;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    _statusBarHidden = YES;
-    [self setNeedsStatusBarAppearanceUpdate];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        _statusBarHidden = NO;
+    if (_statusBarHiddenTimes == 0) {
+        _statusBarHidden = YES;
         [self setNeedsStatusBarAppearanceUpdate];
-    });
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            _statusBarHidden = NO;
+            [self setNeedsStatusBarAppearanceUpdate];
+            _statusBarHiddenTimes += 1;
+        });
+    }
 }
 
 - (void)viewDidLoad {
