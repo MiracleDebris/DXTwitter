@@ -55,7 +55,7 @@
     anim.fillMode = kCAFillModeForwards;
     [view.layer.mask addAnimation:anim forKey:nil];
     
-    [UIView animateWithDuration:0.25 delay:1.3 options:0 animations:^{
+    [UIView animateWithDuration:0.5 delay:1.3 options:0 animations:^{
         launchView.alpha = 0;
     } completion:^(BOOL finished) {
         [launchView removeFromSuperview];

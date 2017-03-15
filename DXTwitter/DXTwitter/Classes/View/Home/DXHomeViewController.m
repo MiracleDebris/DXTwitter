@@ -24,7 +24,9 @@
 //@property (nonatomic, strong) DXTwitterTransitionDelegate *transitionDelegate;
 @end
 
-@implementation DXHomeViewController
+@implementation DXHomeViewController {
+    BOOL _statusBarHidden;
+}
 
 - (instancetype)init {
     self = [super init];
@@ -34,9 +36,22 @@
     return self;
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return _statusBarHidden;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    _statusBarHidden = YES;
+    [self setNeedsStatusBarAppearanceUpdate];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        _statusBarHidden = NO;
+        [self setNeedsStatusBarAppearanceUpdate];
+    });
 }
 
 - (void)viewDidLoad {
