@@ -1,12 +1,12 @@
 DXTwitter
 =
-![DXTwitter icon](http://i3.sinaimg.cn/IT/2012/0607/U5384P2DT20120607033903.png)
+![DXTwitter icon](https://upload.wikimedia.org/wikipedia/de/thumb/9/9f/Twitter_bird_logo_2012.svg/154px-Twitter_bird_logo_2012.svg.png)
 
 **DXTwitter**, an imitation sample client of Twitter, just like its name 2333. 
 
 About
 -
-There are some interesting UI animations in Twitter iOS client, so I have been thinking about to imitate it since I started to learn the development of iOS app. Now this project is finally happend! And all the features are completed by the simplest way that I can think of! 
+There are some interesting UI animations in Twitter iOS client, so I have been thinking about to imitate it since I started to learn the development of iOS app. Now this project is finally started! And all the features are completed by the simplest way that I can think of.
 
 Features
 -
@@ -32,7 +32,7 @@ I will tidy and split the above features into several individual components next
 
 Issuses and plans
 -
-There are tons of issuses in this project for the time being. And I will try my best to make it better just like the Twitter its self! Maybe 
+There are tons of issuses in this project for the time being. And I will try my best to make it better just like the Twitter its self! 
 
 License
 -
