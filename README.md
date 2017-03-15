@@ -7,7 +7,7 @@ DXTwitter
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/YYKit/master/LICENSE)&nbsp;
 [![CocoaPods](https://img.shields.io/cocoapods/p/RAMAnimatedTabBarController.svg)](http://cocoapods.org/pods/RAMAnimatedTabBarController)
 
-**DXTwitter**, an imitation sample client of Twitter, just like its name 2333. 
+**DXTwitter**, an imitation sample client of Twitter. 
 
 About
 -
