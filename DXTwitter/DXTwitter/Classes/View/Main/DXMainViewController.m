@@ -63,7 +63,7 @@
                 for (UIView *v in subView.subviews) {
                     if ([v isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
                         CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-                        anim.values = @[@1.0, @0.9, @1.05, @0.97, @1.0];
+                        anim.values = @[@1.0, @0.8, @1.05, @0.97, @1.0];
                         anim.duration = 0.4;
                         anim.calculationMode = kCAAnimationCubic;
                         [v.layer addAnimation:anim forKey:nil];

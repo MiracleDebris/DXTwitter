@@ -51,8 +51,14 @@
     
     UIBarButtonItem *dismissItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"tweet_dismiss"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(dismissVC)];
     
+    UIImage *image = [UIImage imageNamed:@"avatar"];
+    image = [image imageByRoundCornerRadius:10 corners:UIRectCornerAllCorners borderWidth:6 borderColor:[UIColor whiteColor] borderLineJoin:kCGLineJoinRound];
+    image = [image imageByResizeToSize:CGSizeMake(40, 40)];
+    UIBarButtonItem *avatarItem = [[UIBarButtonItem alloc] initWithImage:[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:nil];
+    
     UINavigationItem *navItem = [[UINavigationItem alloc] init];
     navItem.rightBarButtonItem = dismissItem;
+    navItem.leftBarButtonItem = avatarItem;
     
     _navBar.items = @[navItem];
     [self.view addSubview:_navBar];
