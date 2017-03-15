@@ -23,7 +23,7 @@ Features
 * profile UI (avatar frame change && BGView blur effect)  
 ![](http://i.giphy.com/l0Iy8JfgxyERjNScU.gif)
 
-* home timeline (supported by YYKit - an amazing kit!)  
+* home timeline (supported by [YYKit](https://github.com/ibireme/YYKit "YYKit") - an amazing kit!)  
 ![](http://i.giphy.com/3og0IvZeuUyyJqQyLS.gif)
 
 How to use
