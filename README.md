@@ -25,6 +25,8 @@ Features
 * juming items  
 ![](http://i.giphy.com/l0IxZQyAszAZKf4Qg.gif)
 
+![](https://media.giphy.com/media/3og0IzEDSf1Q6gUw6c/source.gif)
+
 * profile UI (avatar frame change && BGView blur effect)  
 ![](http://i.giphy.com/l0Iy8JfgxyERjNScU.gif)
 
