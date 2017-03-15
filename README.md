@@ -37,7 +37,7 @@ I will tidy and split the above features into several individual components next
 
 Issuses and plans
 -
-There are tons of issuses in this project for the time being. And I will try my best to make it better just like the Twitter its self! 
+There are tons of issuses in this project for the time being. And I will try my best to make it better just like the Twitter it self! 
 
 License
 -
